@@ -56,6 +56,10 @@ Optionally: Configure the scrolling offset
 
 ## Release History
 
+__1.1.0__
+
+  * Added beforeScroll and afterScroll hooks.
+
 __1.0.0__
 
   * Initial version.

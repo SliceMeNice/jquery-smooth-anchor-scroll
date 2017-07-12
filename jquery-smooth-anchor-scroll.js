@@ -8,9 +8,25 @@
 		} 
 
 		if ( $target.length ) {
-			var targetOffset = $target.offset().top - offset + 'px';
-			$( 'html, body' ).animate( { scrollTop: targetOffset }, time, function () {
-				window.location.hash = hash;
+			var beforeScrollPromise = false;
+
+			if ( window.smoothAnchorScroll && window.smoothAnchorScroll.beforeScroll ) {
+				beforeScrollPromise = window.smoothAnchorScroll.beforeScroll();
+			} else {
+				var dfd = $.Deferred();
+				dfd.resolve();
+				beforeScrollPromise = dfd.promise();
+			}
+
+			beforeScrollPromise.then( function() {
+				var targetOffset = $target.offset().top - offset + 'px';
+				$( 'html, body' ).animate( { scrollTop: targetOffset }, time, function () {
+					window.location.hash = hash;
+
+					if ( window.smoothAnchorScroll && window.smoothAnchorScroll.afterScroll ) {
+						window.smoothAnchorScroll.afterScroll();
+					}
+				} );
 			} );
 		}
 	}
