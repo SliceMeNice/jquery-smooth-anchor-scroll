@@ -56,6 +56,10 @@ Optionally: Configure the scrolling offset
 
 ## Release History
 
+__1.1.1__
+
+  * Exclude certain hash types.
+
 __1.1.0__
 
   * Added beforeScroll and afterScroll hooks.

@@ -1,6 +1,10 @@
 ( function( $ ) {
 
 	function smoothScrollTo( hash, offset, time ) {
+		if ( !hash.match( '\#[^\&]+$' ) ) {
+			return;
+		}
+
 		var $target = $( hash );
 
 		if ( !$target.length ) {
