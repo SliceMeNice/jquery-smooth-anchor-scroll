@@ -25,7 +25,11 @@
 			beforeScrollPromise.then( function() {
 				var targetOffset = $target.offset().top - offset + 'px';
 				$( 'html, body' ).animate( { scrollTop: targetOffset }, time, function () {
-					window.location.hash = hash;
+					if ( history.replaceState ) {
+						history.replaceState(null, null, hash);
+					} else {
+						location.hash = hash;
+					}
 
 					if ( window.smoothAnchorScroll && window.smoothAnchorScroll.afterScroll ) {
 						window.smoothAnchorScroll.afterScroll();

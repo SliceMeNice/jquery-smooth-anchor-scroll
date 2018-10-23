@@ -56,6 +56,9 @@ Optionally: Configure the scrolling offset
 
 ## Release History
 
+__1.1.3__
+  * Replaced setting the url hash using `history.replaceState` if available.
+
 __1.1.2__
   * Fixed reference to window object.
 
