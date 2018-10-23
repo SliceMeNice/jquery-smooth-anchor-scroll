@@ -17,8 +17,8 @@ Optionally: Configure the scrolling duration either globally or per link element
 
 		window.smoothAnchorScroll = {
 			// 600ms is the default scrolling duration
-			// this can also be a function returning a duration in milliseconds  
-			duration: 600 
+			// this can also be a function returning a duration in milliseconds
+			duration: 600
 		};
 
 	} );
@@ -44,17 +44,20 @@ Optionally: Configure the scrolling offset
 		window.smoothAnchorScroll = window.smoothAnchorScroll || {};
 
 		window.smoothAnchorScroll = {
-			// this can also be a function returning the offset in pixels  
-			offset: 80 
+			// this can also be a function returning the offset in pixels
+			offset: 80
 		};
 
 	} );
 
 } )();
-``` 
+```
 
 
 ## Release History
+
+__1.1.2__
+  * Fixed reference to window object.
 
 __1.1.1__
 
