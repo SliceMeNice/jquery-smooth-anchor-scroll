@@ -42,7 +42,7 @@
 			if ( $.isFunction( window.smoothAnchorScroll.offset ) ) {
 				offset = window.smoothAnchorScroll.offset();
 			} else {
-				offset = parseInt( windo.smoothAnchorScroll.offset, 10 );
+				offset = parseInt( window.smoothAnchorScroll.offset, 10 );
 			}
 		}
 
@@ -56,7 +56,7 @@
 			if ( $.isFunction( window.smoothAnchorScroll.duration ) ) {
 				duration = window.smoothAnchorScroll.duration();
 			} else {
-				duration = parseInt( windo.smoothAnchorScroll.duration, 10 );
+				duration = parseInt( window.smoothAnchorScroll.duration, 10 );
 			}
 		}
 
