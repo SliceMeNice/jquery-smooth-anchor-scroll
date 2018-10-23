@@ -1,0 +1,23 @@
+{
+  "name": "@slicemenice/jquery-smooth-anchor-scroll",
+  "version": "1.1.2",
+  "description": "Small jQuery-based anchor scroll library",
+  "keywords": [
+    "jQuery",
+    "smooth scroll"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SliceMeNice/jquery-smooth-anchor-scroll.git"
+  },
+  "author": "SliceMeNice",
+  "contributors": [{
+    "name": "Stefan Ullinger",
+    "email": "stefan@slicemenice.de"
+  }],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SliceMeNice/jquery-smooth-anchor-scroll/issues"
+  },
+  "homepage": "https://github.com/SliceMeNice/jquery-smooth-anchor-scroll#readme"
+}
